@@ -1,0 +1,139 @@
+J/AJ/131/527     UBVRI light curves of 44 type Ia supernovae        (Jha+, 2006)
+================================================================================
+UBVRI light curves of 44 type Ia supernovae
+    Jha S., Kirshner R.P., Challis P., Garnavich P.M., Matheson T.,
+    Soderberg A.M., Graves G.J.M., Hicken M., Alves J.F., Arce H.G., Balog Z.,
+    Barmby P., Barton E.J., Berlind P., Bragg A.E., Briceno C., Brown W.R.,
+    Buckley J.H., Caldwell N., Calkins M.L., Carter B.J., Concannon K.D.,
+    Donnelly R.H., Eriksen K.A., Fabricant D.G., Falco E.E., Fiore F.,
+    Garcia M.R., Gomez M., Grogin N.A., Groner T., Groot P.J., Haisch K.E.Jr,
+    Hartmann L., Hergenrother C.W., Holman M.J., Huchra J.P., Jayawardhana R.,
+    Jerius D., Kannappan S.J., Kim D.-W., Kleyna J.T., Kochanek C.S.,
+    Koranyi D.M., Krockenberger M., Lada C.J., Luhman K.L., Luu J.X.,
+    Macri L.M., Mader J.A., Mahdavi A., Marengo M., Marsden B.G., McLeod B.A.,
+    McNamara B.R., Megeath S.T., Moraru D., Mossman A.E., Muench A.A.,
+    Munoz J.A., Muzerolle J., Naranjo O., Nelson-Patel K., Pahre M.A.,
+    Patten B.M., Peters J., Peters W., Raymond J.C., Rines K., Schild R.E.,
+    Sobczak G.J., Spahr T.B., Stauffer J.R., Stefanik R.P., Szentgyorgyi A.H.,
+    Tollestrup E.V., Vaisanen P., Vikhlinin A., Wang Z., Willner S.P.,
+    Wolk S.J., Zajac J.M., Zhao P., Stanek K.Z.
+   <Astron. J. 131, 527 (2006)>
+   =2006AJ....131..527J
+================================================================================
+ADC_Keywords: Supernovae ; Photometry, UBVRI
+Keywords: supernovae: general - techniques: photometric
+
+Abstract:
+    We present UBVRI photometry of 44 Type Ia supernovae (SNe Ia) observed
+    from 1997 to 2001 as part of a continuing monitoring campaign at the
+    Fred Lawrence Whipple Observatory of the Harvard-Smithsonian Center
+    for Astrophysics. The data set comprises 2190 observations and is the
+    largest homogeneously observed and reduced sample of SNe Ia to date,
+    nearly doubling the number of well-observed, nearby SNe Ia with
+    published multicolor CCD light curves.
+
+Description:
+    All the photometry presented here was obtained with the FLWO 1.2m
+    telescope, with either the AndyCam CCD camera or the 4Shooter 2x2 CCD
+    mosaic.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+sn.dat         33       44   Supernova position
+table2.dat    103      426   Comparison star photometry
+table4.dat    110      486   Supernova photometry
+table5.dat     30      216   Natural system UBVRI passbands
+--------------------------------------------------------------------------------
+
+See also:
+  II/189 : Magnitude Observations of Type I Supernovae (Cadonau+ 1990)
+  J/A+A/317/423 : Revised photometry of SNIa (Patat, 1997)
+
+Byte-by-byte Description of file: sn.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2  A2    ---     ---       [SN]
+   4-  9  A6    ---     SN        Supernova identification
+  11- 12  I2    h       RAh       Hour of Right Ascension (J2000)
+  14- 15  I2    min     RAm       Minute of Right Ascension (J2000)
+  17- 21  F5.2  s       RAs       Second of Right Ascension (J2000)
+      23  A1    ---     DE-       Sign of the Declination (J2000)
+  24- 25  I2    deg     DEd       Degree of Declination (J2000)
+  27- 28  I2    arcmin  DEm       Arcminute of Declination (J2000)
+  30- 33  F4.1  arcsec  DEs       Arcsecond of Declination (J2000)
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label   Explanations
+--------------------------------------------------------------------------------
+   1-  2  A2    ---      ---     [SN]
+   4-  9  A6    ---      SN      Supernova identification
+  11- 12  A2    ---      obj     Comparison object number (1)
+  15- 16  I2    h        RAh     Hour of Right Ascension (J2000)
+  18- 19  I2    min      RAm     Minute of Right Ascension (J2000)
+  21- 25  F5.2  s        RAs     Second of Right Ascension (J2000)
+      27  A1    ---      DE-     Sign of the Declination (J2000)
+  28- 29  I2    deg      DEd     Degree of Declination (J2000)
+  31- 32  I2    arcmin   DEm     Arcminute of Declination (J2000)
+  34- 37  F4.1  arcsec   DEs     Arcsecond of Declination (J2000)
+  39- 44  F6.3  mag      Vmag    ? The V band magnitude
+  46- 50  F5.3  mag    e_Vmag    ? The error in Vmag
+  52- 57  F6.3  mag      U-B     ? The (U-B) color index
+  59- 63  F5.3  mag    e_U-B     ? The error in U-B
+  65- 69  F5.3  mag      B-V     ? The (B-V) color index
+  71- 75  F5.3  mag    e_B-V     ? The error in B-V
+  77- 82  F6.3  mag      V-Rc    ? The (V-Rc) color index
+  84- 88  F5.3  mag    e_V-Rc    ? The error in V-Rc
+  90- 95  F6.3  mag      V-Ic    ? The (V-Ic) color index
+  97-101  F5.3  mag    e_V-Ic    ? The error in V-Ic
+     103  I1    ---      Nph     ? Number of photometric nights Object observed
+--------------------------------------------------------------------------------
+Note (1): The comparison star is [JKC2006] SN YYYYAA NN in Simbad.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table4.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label      Explanations
+--------------------------------------------------------------------------------
+   1-  2  A2    ---       ---        [SN]
+   4-  9  A6    ---       SN         Supernova identification
+  11- 20  F10.2 d         HJD        Heliocentric Julian date
+  22- 27  F6.3  mag       Umag       ? The U band magnitude
+  29- 33  F5.3  mag     e_Umag       ? The error in Umag
+  35- 40  F6.3  mag       Bmag       ? The B band magnitude
+  42- 46  F5.3  mag     e_Bmag       ? The error in Bmag
+  48- 53  F6.3  mag       Vmag       ? The V band magnitude
+  55- 59  F5.3  mag     e_Vmag       ? The error in Vmag
+  61- 66  F6.3  mag       Rcmag      ? The Rc band magnitude
+  68- 72  F5.3  mag     e_Rcmag      ? The error in Rcmag
+  74- 79  F6.3  mag       Icmag      ? The Ic band magnitude
+  81- 85  F5.3  mag     e_Icmag      ? The error in Icmag
+  87-110  A24   ---       Det/Filt   The detector/filterset used
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table5.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units Label       Explanations
+--------------------------------------------------------------------------------
+       1  A1    ---   Filter      [UBVRI] Filter
+   3-  6  I4    nm    lambda      Wavelength
+   8- 12  F5.3  ---   Andy/SAO    The AndyCam/SAO normalized response
+  14- 18  F5.3  ---   Andy/Har    The AndyCam/Harris normalized response
+  20- 24  F5.3  ---   4Shoot/SAO  The 4Shooter/SAO normalized response
+  26- 30  F5.3  ---   4Shoot/Har  The 4Shooter/Harris normalized response
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+References:
+    Riess et al.  CfA1. 1999AJ....117..707R
+    Hicken et al. CfA3. 2009ApJ...700..331H  Cat. J/ApJ/700/331
+    Hicken et al. CfA4. 2012ApJS..200...12H  Cat. J/ApJS/200/12
+================================================================================
+(End)                   Greg Schwarz [AAS], Marianne Brouty [CDS]    14-Nov-2006
